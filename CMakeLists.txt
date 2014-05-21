@@ -21,7 +21,7 @@ configure_file(gittin.pc.in gittin.pc @ONLY)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/gittin.pc DESTINATION ${DST_LIB}/pkgconfig)
 
 # Find the QtWidgets library
-find_package(Qt5Core REQUIRED)
+find_package(Qt5Core 5.2 REQUIRED)
 
 set(CMAKE_CXX_FLAGS "-Wall -g -std=c++0x")
 
